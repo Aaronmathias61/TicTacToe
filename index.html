@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script src="script.js"></script>
+    <title>DOM Assessment</title>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Welcome to TIC TAC TOE</h1>
+    </div>
+    <!-- Name of the user  -->
+    <div class="users">
+      <label for="name">User 1 [O]</label>
+      <button><div id="user1"></div></button><br />
+      <label for="name">User 2 [X]</label>
+      <button><div id="user2"></div></button>
+    </div>
+
+    <h2><div class="turns"></div></h2>
+
+    <!-- main function -->
+    <div class="main">
+      <button onclick="start();">Start</button>
+      <button onclick="restart();">Restart</button>
+    </div>
+
+    <div class="box">
+      <input type="text" id="a1" onclick="play1(); game();" readonly />
+      <input type="text" id="a2" onclick="play2(); game();" readonly />
+      <input type="text" id="a3" onclick="play3(); game();" readonly />
+    </div>
+    <div class="box">
+      <input type="text" id="b1" onclick="play4(); game();" readonly />
+      <input type="text" id="b2" onclick="play5(); game();" readonly />
+      <input type="text" id="b3" onclick="play6(); game();" readonly />
+    </div>
+    <div class="box">
+      <input type="text" id="c1" onclick="play7(); game();" readonly />
+      <input type="text" id="c2" onclick="play8(); game();" readonly />
+      <input type="text" id="c3" onclick="play9(); game();" readonly />
+    </div>
+
+    <div id="winner"></div>
+  </body>
+</html>
